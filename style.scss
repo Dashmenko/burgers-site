@@ -1,0 +1,181 @@
+@font-face {
+    font-family: 'Montserrat_Bold';
+    src: url(./Assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat_Regular';
+    src: url(./Assets/fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat_Medium';
+    src: url(./Assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+body{
+    background: linear-gradient(0deg, rgba(237,164,24,1) 0%, rgba(237,164,24,0) 15%, rgba(255,255,255,0) 50%, rgba(237,164,24,1) 85%, rgba(237,164,24,1) 100%);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+//____________________________________________________________________________________________________________________________________
+header {
+    height: 796px;
+    .navigation {
+        margin-top: 104.4px;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            margin-left: 120px;
+        }
+
+        .nav_href {
+            font-family: 'Montserrat_Medium';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 25px;
+            line-height: 30px;
+            margin-left: 103px;
+            margin-bottom: 20px;
+        }
+
+        .main {
+            font-family: 'Montserrat_Bold';
+            font-style: normal;
+            font-weight: 700;
+            margin-left: 150px;
+            font-size: 25px;
+            line-height: 30px;
+
+        }
+
+        .basket {
+            margin-left: 126.5px;
+            // margin-bottom: 14px;
+        }
+    }
+
+    .form {
+        margin-left: 122px;
+        margin-top: 155px;
+        width: 500px;
+        float: left;
+        @media screen and (width<1501px){
+            width: calc(50% - 122px);
+        }
+
+        .nav_label {
+            font-size: 32px;
+            font-family: 'Montserrat_Bold';
+            font-style: normal;
+            font-weight: 800;
+            line-height: 39px;
+        }
+
+        .nav_paragraph {
+            font-family: 'Montserrat_Regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            margin-top: 50px;
+        }
+
+        .button {
+            font-family: 'Montserrat_Regular';
+            width: 142.26px;
+            height: 60px;
+            border-radius: 50px;
+            font-size: 24px;
+            color: white;
+            background-color: #E52626;
+            margin-top: 27px;
+        }
+    }
+    .burger_container{
+        display: flex;
+        align-items: center;
+    }
+    .burg {
+        mix-blend-mode: multiply;
+        float: right;
+        margin-right: 205px;
+        @media screen and (width<1501px){
+            width: 50%;
+            display: inline;
+            margin-right: 0;
+        }
+    }
+}
+
+//____________________________________________________________________________________________________________________________________
+main {
+    height: 900px;
+
+    .menu {
+        font-family: 'Montserrat_Bold';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 55px;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    .row {
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .block {
+        margin-left: 80px;
+        width: 450px;
+        height: 300px;
+        margin-bottom: 93px;
+    }
+
+    a {
+        font-family: 'Montserrat_Medium';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 43px;
+        text-align: center;
+        margin-right: 36px;
+    }
+}
+
+//____________________________________________________________________________________________________________________________________
+footer {
+    div {
+        text-align: center;
+        font-family: 'Montserrat_Medium';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .information{
+        margin-top: 157px;
+    }
+    .important{
+        display: flex;
+        justify-content:center;
+    
+    a{
+        margin-right: 91px;
+    }
+}
+    .about{
+        margin-top: 46px;
+    }
+    .ikon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
